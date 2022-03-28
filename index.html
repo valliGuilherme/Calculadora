@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadroa em Js</title>
+</head>
+<body>
+    <div class="calculator" name="calculator">
+        <form name="form">
+            <input type="text" name="display" class="display">
+        </form>
+        <div class="calculator-buttons" name="botoes">
+            <button class="botao" id="limparDisplay" onclick="limparDisplay()">CE</button>
+            <button class="botao" id="limparCalculo" onclick="limparDisplay()">C</button>
+            <button class="botao" id="backspace" onclick="backspace()">«</button>
+            <button class="botao" id="operadorDividir" onclick="addDisplay('/')">÷</button>
+            <button class="botao" id="tecla7" onclick="addDisplay(7)">7</button>
+            <button class="botao" id="tecla8" onclick="addDisplay(8)">8</button>
+            <button class="botao" id="tecla9" onclick="addDisplay(9)">9</button>
+            <button class="botao" id="operadorMultiplicar" onclick="addDisplay('*')">×</button>
+            <button class="botao" id="tecla4" onclick="addDisplay(4)">4</button>
+            <button class="botao" id="tecla5" onclick="addDisplay(5)">5</button>
+            <button class="botao" id="tecla6" onclick="addDisplay(6)">6</button>
+            <button class="botao" id="operadorSubtrair" onclick="addDisplay('-')">-</button>
+            <button class="botao" id="tecla1"onclick="addDisplay(3)" >3</button>
+            <button class="botao" id="tecla2"onclick="addDisplay(2)">2</button>
+            <button class="botao" id="tecla3"onclick="addDisplay(1)">1</button>
+            <button class="botao" id="operadorAdicionar" onclick=" addDisplay('+')">+</button>
+            <button class="botao" id="tecla0" onclick="addDisplay(0)">0</button>
+            <button class="botao" id="decimal" onclick="addDisplay('.')">.</button>
+            <button id="igual" onclick="calcular()">=</button>
+            <button id="potencia" onclick="addDisplay('**')">^</button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
